@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="https://fonts.google.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <header>
+            <figure>
+                <img src="../imagens/logo.png" alt="um cara lindo" />
+            </figure>
+            <p>Flor de Jambo Confeitaria</p>
+            <nav class="menu">
+                <ul>
+                    <li><a class="header-link" href="../index.html" target="_blank">Início </a></li>
+                    <li><a class="header-link" href="#topo"> Tortas</a></li>
+                    <li><a class="header-link" href="paginas/contato.html" target="_blank">Bolos </a></li>
+                    <li><a class="header-link" href="paginas/contato.html" target="_blank">Doces </a></li>
+                    <li><a class="header-link" href="paginas/contato.html" target="_blank">Trufados</a></li>
+                </ul>
+            </nav>
+             <div class="icons">
+                <ul>
+                    <li><a class="active" href="../paginas/login.html"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+                    <li><a href="#"><i class="fas fa-cart-arrow-down"></i>Carrinho</a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i>Checkout</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i> </a></li> 
+                </ul>
+            
+            </div> 
+    </header>
+    <main>
+        <h1>Confeitaria Flor de Jambo</h1>
+        <!-- envio de dados pelo formulario -->
+        <form action="https://www.youtube.com.br" method="GET">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite Seu nome"/>
+
+            <br>
+            <label for="">Email</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu Email"/>
+            
+            <br>
+            <label for="opiniao">Sua Opinião</label>
+            <textarea name="opiniao" id="opiniao"></textarea>
+            
+            <br>
+            <label for="estado">Estados</label>
+            <select name="" id="estado">
+                <option value="">Escolha</option>
+                <option value="sp">São paulo</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="bh">Bahia</option>
+            </select>
+            
+            <br>
+            <label>Hobbies</label>
+            <input type="checkbox" id="hob-musica" name="hob-musica" value="Música">Música
+            <input type="checkbox" id="hob-futebol" name="hob-futebol" value="Futebol">Futebol
+            <input type="checkbox" id="hob-filmes" name="hob-filmes" value="Filmes">Filmes
+            
+            <label>Aceita</label>
+            <input type="radio" id="aceita-sim" name="aceita" value="sim">Sim
+            <input type="radio" id="aceita-nao" name="aceita" value="nao">Não
+            
+            <br>
+            <button  type="submit">Enviar Dados</button>
+        </form>
+            
+    </main>
+    <script>
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: lightgray;
+}
+
+body:before {
+content: '';
+position: fixed;
+left: 0;
+top: 0;
+z-index: -1;
+width: 100%;
+height: 100%;
+height: 100vh;
+background-color: #fdcde2;
+}
+
+
+/* CABEÇALHO MENU */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 5px 5px 0 5px;
+    background-color: #8a1a8e;
+    background: #5FD8D0;
+}
+
+header p  {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+}
+
+header figure img {
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    left: 15px;
+    top: 5px;
+}
+
+a.header-link {
+    background: #FDCDE2;
+    display: inline-block;
+    width: 90px;
+    border-radius: 20px;
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px;
+    box-shadow: 1px 1px 1px 0 #000000;
+    text-shadow: 1px 1px -2px #000000;
+    border: solid #8a919c 1px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px 0px 0px 53px;
+}
+
+.header-link:hover {
+    background-color:  #ffffff;
+    color: #e20364;
+    box-shadow: 1px 1px 1px 0 #000000;
+    border: solid #cf246e 1px;
+    font-weight: 600;
+    border-radius: 10px 0px 10px 0px;
+}
+
+nav  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    width: 100%;
+    height: 60px;
+}
+
+.menu ul {
+    width: 30%;
+    display: flex;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+
+ }
+div .icons {
+    position: static;
+    top: 10px;
+    right: 20px;
+    width: 20%;
+}
+
+.icons a {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: sans-serif;
+    font-variant : normal;
+    margin-right: 20px;
+}
+
+i.fas {
+    padding: 5px;
+}
+
+i.fas {
+    box-sizing:content-box;
+    width: 20px;
+    height: 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+    background-color: #FDCDE2;
+    box-shadow: 1px 1px 1px 0 #000000;
+}
+
+i.fas:hover {
+    border-radius: 5px;
+    border: solid #cf246e 1px;
+    background-color: #ffffff;
+
+} 
+
+h1 {
+    padding-top: 25px;
+    font-size: 20px;
+    font-family:  sans-serif;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    word-spacing: 15px;
+    letter-spacing: 2px;
+    line-height: 2.5em;
+}
+
+
+form  {
+    font-size: 20px;
+    box-sizing: border-box; 
+    padding: 20px 20px 10px ;
+    margin: 55px auto;
+    width: 50%;
+    background-color: #5fd8d0;
+    border-radius: 30px;
+}
+
+form label {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    padding: 5px 5px 5px;
+}
+
+#nome , #email {
+    margin-left: 50px;
+    padding: 5px 15px 5px ;
+    border-radius: 10px;
+    background-color: #fdcde2;
+    width: 80%;
+}
+
+#aceita-sim, #aceita-nao {
+    margin-left: 50px;
+    padding: 5px 15px 5px ;
+    border-radius: 10px;
+    background-color: #fdcde2;
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    margin-left: 50px;
+    padding: 5px 15px 5px ;
+    border-radius: 10px;
+    background-color: #fdcde2;
+    margin-right: 10px;
+}
+
+select {
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid 1px;
+    margin-left: 50px;
+    background-color: #fdcde2;
+    width: 40%;
+}
+
+textarea {
+    padding: 5px;
+    border-radius: 10px;
+    border: solid 1px;
+    margin-left: 50px;
+    width: 50%;
+    background-color: #fdcde2;
+
+}
+
+button {
+    background: #fdcde2;
+    color: #000000;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding : 5px;
+    font-size: 14px;
+    width: 130px;
+}
+
+button:hover {
+    border-radius: 5px;
+    border: solid  1px;
+    background-color: #ffffff;
+}
+
+
+
+ /* se display for mais que 679px menu some  */
+@media(min-width: 679px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+@media(max-width: 680px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media(max-width: 910px){
+    .autenticacao {
+        display: none;
+    }
+}
